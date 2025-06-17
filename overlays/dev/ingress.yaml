@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: my-app-ingress
+  namespace: my-app   # ← 이 부분 중요
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
